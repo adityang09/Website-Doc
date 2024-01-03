@@ -1,0 +1,10 @@
+.heading{
+        color:blue;
+        text-align:center;
+}
+.footer{
+    color:black;
+    text-align:center;
+}
+body {background: rgb(36,0,0);
+    background: linear-gradient(90deg, rgba(36,0,0,1) 0%, rgba(211,40,40,0.4822303921568627) 0%, rgba(55,104,194,1) 0%, rgba(5,93,177,1) 0%, rgba(121,9,9,0) 100%);}
