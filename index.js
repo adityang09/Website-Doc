@@ -45,3 +45,22 @@ $(document).ready(function () {
   });
 });
 
+// Add this to your index.js file
+$(document).ready(function () {
+  // Highlight active section in navigation
+  $(window).scroll(function () {
+    const scrollPosition = $(window).scrollTop();
+
+    // Adjust the offset based on your layout
+    $('section').each(function () {
+      const sectionTop = $(this).offset().top - 50;
+      const sectionBottom = sectionTop + $(this).outerHeight();
+
+      if (scrollPosition >= sectionTop && scrollPosition < sectionBottom) {
+        const sectionId = $(this).attr('id');
+        $('.topnav a').removeClass('active');
+        $(`.topnav a[href="#${sectionId}"]`).addClass('active');
+      }
+    });
+  });
+});
