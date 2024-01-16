@@ -20,6 +20,3 @@ function toggleDarkMode() {
 function enableDarkMode() {
   $('body').addClass('dark-mode');
 }
-
-  });
-});
