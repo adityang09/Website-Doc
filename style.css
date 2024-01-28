@@ -1,6 +1,7 @@
 .heading{
     color:black;
     text-align:center;
+    margin-bottom: 0px; 
 }
 .footer{
 color:white;
@@ -22,7 +23,10 @@ text-align:center;
     height: 50%;
     object-fit: cover;
     transform: scale(0.7); /* Scale down by 70% */
+    display: block;
+    margin: 0 auto; /* Center the image */
     
   }
-  
+
+
 
