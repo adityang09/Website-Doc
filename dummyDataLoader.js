@@ -8,7 +8,7 @@ var json = {
         },
         {
             "Started_By": "aditya_gokhale",
-            "Title": "Alcohol makes me feel better",
+            "Title": "I drink alcohol everyday how about you guys",
             "Date_Posted": "22-01-2024",
             "Replies": 4
         },
