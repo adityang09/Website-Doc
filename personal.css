@@ -1,0 +1,50 @@
+#headerFour {
+    //border: 1px solid black;
+}
+
+#headerEight {
+    //border: 1px solid blue;
+}
+
+#threeCol {
+    //border: 1px solid red;
+}
+
+#twoCol {
+    //border: 1px solid red;
+}
+
+header {
+    //border: 1px solid black;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box; 
+}
+
+#icon {
+    background-position:0 0;
+    height:92px;
+    width:110px;
+}
+#threadsHeading {
+    font-weight: 200;
+    letter-spacing: 0.6px;
+}
+
+table {
+    //border: 1px solid green;
+}
+
+#brandText {
+    //border: 1px solid brown;
+    letter-spacing: 0.8px;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 46%;
+}
