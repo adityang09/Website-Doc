@@ -92,8 +92,40 @@ p{
       </div>
       <div class="hero">
         <h1 class="heading">Deaddict India</h1>
+      <!--
         <img src="./651eaf3dbb187.jpg" alt="Health and heal world">
+      -->
     </div>
+   
+    <div class="image_slider">
+      <div class="slider">
+        <div class="slider__slides">
+          <div class="slider__slide active">
+             <img src="./651eaf3dbb187.jpg" alt="Deaddict Mission" />
+          </div>
+          <div class="slider__slide">
+            <img src="./mature-man-alcohol-problems-600nw-392104228.jpg" alt="Say no to Alcohol" />
+          </div>
+          <div class="slider__slide">
+            <img src="./drug-addiction-horizontal-illustration_1284-23891.jpg" alt="A street market in China" />
+          </div>
+          <div class="slider__slide">
+            <img src="./BEST_DE-ADDICTION_CENTRE_IN_DELHI.jpg" alt="Deaddict best centre" />
+          </div>
+        </div>
+        <div id="nav-button--prev" class="slider__nav-button"></div>
+        <div id="nav-button--next" class="slider__nav-button"></div>
+        <div class="slider__nav">
+          <div class="slider__navlink active"></div>
+          <div class="slider__navlink"></div>
+          <div class="slider__navlink"></div>
+          <div class="slider__navlink"></div>
+        </div>
+      </div>
+    </div>
+      
+
+      
     <div class="container">
       <h2>Welcome to India Nashamukti Center Where Hope & Healing Konverge.</h2>
     </div>
@@ -147,7 +179,38 @@ p{
 
     <div class="footer"><p>&copy; 2024 NB Deaddiction Center. All rights reserved.</p> 
 
+
+</body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <script src = "index.js" charset = "UTF-8"></script>
-</body>
+<script>let slides = document.getElementsByClassName("slider__slide");
+  let navlinks = document.getElementsByClassName("slider__navlink");
+  let currentSlide = 0;
+  
+  document.getElementById("nav-button--next").addEventListener("click", () => {
+      changeSlide(currentSlide + 1)
+  });
+  document.getElementById("nav-button--prev").addEventListener("click", () => {
+      changeSlide(currentSlide - 1)
+  });
+  
+  function changeSlide(moveTo) {
+      if (moveTo >= slides.length) {moveTo = 0;}
+      if (moveTo < 0) {moveTo = slides.length - 1;}
+      
+      slides[currentSlide].classList.toggle("active");
+      navlinks[currentSlide].classList.toggle("active");
+      slides[moveTo].classList.toggle("active");
+      navlinks[moveTo].classList.toggle("active");
+      
+      currentSlide = moveTo;
+  }
+  
+  document.querySelectorAll('.slider__navlink').forEach((bullet, bulletIndex) => {
+      bullet.addEventListener('click', () => {
+          if (currentSlide !== bulletIndex) {
+              changeSlide(bulletIndex);
+          }
+        })});
+        </script>
 </html>
