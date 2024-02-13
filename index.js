@@ -7,6 +7,7 @@ $(document).ready(function () {
 
   $('#darkModeToggle').click(function () {
     toggleDarkMode();
+    toggleFooterTextColor();
   });
 });
 
@@ -20,3 +21,20 @@ function toggleDarkMode() {
 function enableDarkMode() {
   $('body').addClass('dark-mode');
 }
+
+function toggleFooterTextColor() {
+  const footerText = $('.footer p');
+  footerText.toggleClass('white-text');
+}
+// $(document).ready(function() {
+//   function toggleFooterColor() {
+//     const text = $('.hero .heads p');
+//     text.toggleClass('-white-text');
+//   }
+
+//   // You can now call toggleFooterColor function or attach it to an event.
+//   // Example: $('.some-button').click(toggleFooterColor);
+// });
+
+
+
